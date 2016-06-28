@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Deletar Cadastro"
+        android:textSize="40dp"
+
+
+        android:id="@+id/textView18"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#060606" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nome: "
+        android:textSize="30dp"
+        android:textColor="#060606"
+        android:id="@+id/textView20"
+        android:layout_marginTop="79dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textColor="#060606"
+        android:background="@drawable/black_back"
+        android:textSize="30dp"
+        android:id="@+id/textView34"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-mail: "
+        android:textSize="30dp"
+        android:textColor="#060606"
+        android:id="@+id/textView35"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textColor="#060606"
+        android:textSize="30dp"
+        android:background="@drawable/black_back"
+        android:id="@+id/textView36"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView35" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CPF: "
+        android:textColor="#060606"
+        android:textSize="30dp"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView35"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView38"
+        android:textSize="30dp"
+        android:textColor="#060606"
+        android:background="@drawable/black_back"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView37" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETAR CADASTRO"
+        android:id="@+id/button5"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_toEndOf="@+id/textView37"
+        android:textColor="#060606"
+        android:background="#83a4f3"
+        android:onClick="clickouDelete" />
+
+</RelativeLayout>

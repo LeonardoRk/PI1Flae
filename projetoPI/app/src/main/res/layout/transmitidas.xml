@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Informações educativas"
+        android:id="@+id/textView41"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Doenças transmitidas"
+        android:textSize="30dp"
+        android:id="@+id/textView43"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView42"
+        android:layout_alignEnd="@+id/textView42" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_back"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Dengue."
+        android:textSize="30dp"
+        android:id="@+id/textView44"
+        android:layout_below="@+id/textView43"
+        android:layout_alignStart="@+id/textView43" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Chikungunya."
+        android:background="@drawable/black_back"
+        android:id="@+id/textView45"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView44"
+        android:layout_alignStart="@+id/textView44" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Zika."
+        android:background="@drawable/black_back"
+        android:textSize="30dp"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/textView45"
+        android:layout_alignStart="@+id/textView45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_back"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Febre amarela."
+        android:textSize="30dp"
+        android:id="@+id/textView47"
+        android:layout_below="@+id/textView46"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

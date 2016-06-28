@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="false">
+
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:id="@+id/iconList"
+        android:clickable="true"
+        android:background="@drawable/icon_list"
+        android:longClickable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickouconfigurações" />
+
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/iconSearch"
+        android:background="@drawable/icon_search"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/iconList" />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/infoIcon"
+        android:background="@drawable/info_icon"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/iconList" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_below="@id/iconSearch"
+        android:layout_above="@id/iconList"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        tools:context=".UC7"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você"
+        android:backgroundTint="@android:color/background_light"
+        android:textColor="@android:color/holo_orange_dark"
+
+        android:id="@+id/botaoVoce"
+        android:layout_alignTop="@+id/map"
+        android:layout_alignParentStart="true"
+        android:textSize="26dp"
+        android:onClick="clickouVoce" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Foto"
+        android:id="@+id/botaoAddFoto"
+        android:layout_alignTop="@+id/map"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classificar local"
+        android:id="@+id/botaoClassificar"
+        android:layout_below="@+id/botaoVoce"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+
+</RelativeLayout>
+
+

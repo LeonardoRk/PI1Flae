@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Informações educativas"
+        android:id="@+id/textView39"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/botaoTransmissor"
+        android:layout_alignEnd="@+id/botaoTrasmitidos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Escolha uma categoria"
+        android:textSize="30dp"
+        android:id="@+id/textView40"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/textView39"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mosquito transmissor"
+        android:textSize="20dp"
+        android:id="@+id/botaoTransmissor"
+        android:layout_below="@+id/textView40"
+        android:layout_centerHorizontal="true"
+        android:translationZ="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Doenças transmitidas"
+        android:id="@+id/botaoTrasmitidos"
+        android:layout_below="@+id/botaoTransmissor"
+        android:layout_alignStart="@+id/botaoTransmissor"
+        android:layout_marginTop="66dp"
+        android:translationZ="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Cuidados e formas de prevenção"
+        android:id="@+id/botaoPrevencao"
+        android:layout_below="@+id/botaoTrasmitidos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:translationZ="10dp" />
+</RelativeLayout>

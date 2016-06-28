@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Informações educativas"
+        android:id="@+id/textView41"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cuidados"
+        android:textSize="25dp"
+        android:id="@+id/textView43"
+        android:layout_below="@+id/textView41"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_back"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Não deixa água parada, o mosquito necessita dela para se reproduzir."
+        android:textSize="25dp"
+        android:id="@+id/textView44"
+        android:layout_below="@+id/textView43"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Não jogue lixo na rua."
+        android:background="@drawable/black_back"
+        android:id="@+id/textView45"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView44"
+        android:layout_alignStart="@+id/textView44" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Verifique a tampa da caixa d'água."
+        android:background="@drawable/black_back"
+        android:textSize="25dp"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/textView45"
+        android:layout_alignStart="@+id/textView45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_back"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Verifique as calhas para que não acumulem água."
+        android:textSize="25dp"
+        android:id="@+id/textView47"
+        android:layout_below="@+id/textView46"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Não deixe pneus a céu aberto."
+        android:id="@+id/textView48"
+        android:textSize="25dp"
+        android:background="@drawable/black_back"
+        android:layout_below="@+id/textView47"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="- Fiscalize a sua comunidade."
+        android:id="@+id/textView49"
+        android:textSize="25dp"
+        android:background="@drawable/black_back"
+        android:layout_below="@+id/textView48"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

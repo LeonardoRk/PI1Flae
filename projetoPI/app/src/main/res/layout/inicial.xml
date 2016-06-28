@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="@drawable/new_button_go"
+        android:text="Cadastrar"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:clickable="true"
+        android:onClick="clickouCadastrar"
+        android:textSize="@dimen/abc_action_bar_default_height_material"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="LOGIN"
+        android:textSize="32dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:id="@+id/buttonOkay"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.23"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/buttonGo"
+        android:layout_alignStart="@+id/buttonGo"
+        android:background="@drawable/new_button_okay"
+        android:clickable="true"
+        android:onClick="clickouLogin"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agora não"
+        android:textSize="40dp"
+        android:id="@+id/button3"
+        android:onClick="clickouAgoraNao"
+        android:layout_below="@+id/buttonOkay"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Consulta de Local"
+        android:textSize="35dp"
+        android:id="@+id/textView50"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Local: "
+        android:textSize="30dp"
+        android:id="@+id/textView51"
+        android:layout_below="@+id/textView50"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/black_back"
+        android:textSize="30dp"
+        android:id="@+id/campoProcura"
+        android:layout_alignTop="@+id/textView51"
+        android:clickable="true"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_alignEnd="@+id/textView50"
+        android:layout_toEndOf="@+id/textView51"
+        android:textColor="#d3c7c7" />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/procuraLocal"
+        android:background="@drawable/icon_search"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+
+        android:layout_alignTop="@+id/campoProcura"
+        android:layout_alignBottom="@+id/campoProcura"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/campoProcura" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView51"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

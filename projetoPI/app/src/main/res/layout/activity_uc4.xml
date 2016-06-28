@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alterar Cadastro"
+        android:textSize="30dp"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#040404"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nome: "
+        android:textSize="22dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:textColor="#050505" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:id="@+id/textView99"
+        android:layout_alignBottom="@+id/textView8"
+        android:editable="true"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:onClick="clickou9" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Data de nascimento: "
+        android:id="@+id/textView10"
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-mail: "
+        android:textSize="22dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:textColor="#050505"/>
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView97"
+        android:layout_alignBottom="@+id/textView12"
+        android:textSize="22dp"
+        android:editable="true"
+        android:layout_alignStart="@+id/textView99"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickou13"
+        android:enabled="true" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Senha: "
+        android:textColor="#050505"
+        android:textSize="22dp"
+        android:id="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView12" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView96"
+        android:layout_alignBottom="@+id/textView16"
+        android:editable="true"
+        android:layout_alignEnd="@+id/textView91"
+        android:layout_alignStart="@+id/spinner"
+        android:onClick="clickou17"
+        android:enabled="true" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CPF: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView19"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView16" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:id="@+id/textView95"
+        android:layout_alignBottom="@+id/textView19"
+        android:editable="true"
+        android:layout_alignEnd="@+id/textView92"
+        android:layout_toEndOf="@+id/textView19"
+        android:onClick="clickou21" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CEP: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView22"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView19" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="22dp"
+        android:id="@+id/textView94"
+        android:layout_alignBottom="@+id/textView22"
+        android:editable="true"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_toEndOf="@+id/textView8"
+        android:onClick="clickou23" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Estado: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView24"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView22" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_toEndOf="@+id/textView24"
+        android:layout_below="@+id/textView94"
+        android:layout_above="@+id/textView3" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cidade: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView24" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="22dp"
+        android:id="@+id/textView93"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_alignEnd="@+id/textView96"
+        android:onClick="clickou25"
+        android:editable="true"
+        android:enabled="true" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bairro: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView26"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView27" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Endereço: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Complemento: "
+        android:textColor="#050505"
+        android:textSize="22dp"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Matrícula Ag. de saúde: "
+        android:textSize="22dp"
+        android:textColor="#050505"
+        android:id="@+id/textView29"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALTERAR"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView7"
+        android:onClick="clicouAlterar" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="22dp"
+        android:id="@+id/textView92"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView90"
+        android:layout_toEndOf="@+id/textView3"
+        android:onClick="clickou30"
+        android:enabled="true"
+        android:editable="true"
+        android:linksClickable="false" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="22dp"
+        android:id="@+id/textView91"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignTop="@+id/textView27"
+        android:onClick="clickou31"
+        android:enabled="true"
+        android:editable="true" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:textSize="22dp"
+        android:id="@+id/textView90"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignEnd="@+id/textView91"
+        android:layout_toEndOf="@+id/textView28"
+        android:onClick="clickou32"
+        android:editable="true"
+        android:enabled="true" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView89"
+        android:textSize="22dp"
+        android:layout_alignBaseline="@+id/textView29"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_alignEnd="@+id/textView90"
+        android:layout_toEndOf="@+id/textView29"
+        android:onClick="clickou33"
+        android:enabled="true"
+        android:editable="true" />
+
+    <TextView
+        android:clickable="true"
+        android:background="@drawable/black_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/textView98"
+        android:layout_above="@+id/textView97"
+        android:layout_alignEnd="@+id/textView95"
+        android:layout_toEndOf="@+id/textView10"
+        android:enabled="true"
+        android:editable="true"
+        android:focusableInTouchMode="false"
+        android:onClick="clickou5" />
+
+
+</RelativeLayout>
